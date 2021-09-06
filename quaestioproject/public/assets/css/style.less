@@ -1,0 +1,576 @@
+@whiteColour:#fff;
+@textColour:#222;
+@primaryFirstDarker:#FFA207;
+@primaryFirst:#FFB70D;
+@primarySecond:#F8004E;
+@gray:#f5f5f5;
+//@gray:#f8f8f8;
+@possible:#222;
+
+@font1:'Gochi Hand';
+@titleFont:'Schoolbell';
+@textFont:'Raleway';
+
+.errors{
+    margin:20px 0px 30px 0px;
+    color:@primarySecond;
+}
+.firstHeight{
+    min-height:585px;
+}
+.whiteBackground{
+    background-color: @whiteColour;
+}
+.whiteText{
+    color: @whiteColour;
+}
+.titleFont, .titleFont:hover{
+    font-family: @titleFont;
+    font-size:30px;
+    color:@whiteColour;
+}
+.titleFontLogin, .titleFontLogin:hover{
+    color:@textColour;
+}
+.firstLetter{
+    color:@primarySecond;
+}
+body{
+    font-family: @whiteColour;
+}
+
+a, a:hover{
+    color:@whiteColour;
+    text-decoration: none;
+}
+.answerIconLink, .answerIconLink:hover{
+    color:@textColour;
+    padding-top: 3px;
+    &:last-child{
+        margin-left: 20px;
+    }
+}
+
+//////////NAVIGATION //////////////////////////////////////////////////////////////////////////////////////
+
+.uk-navbar-container:not(.uk-navbar-transparent), .navigationDiv {
+    //.whiteBackground();
+    background-color: @possible;
+}
+
+.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+    min-height:60px;
+}
+
+//.navigationDiv{
+//    //border-bottom:1px solid @textColour;
+//}
+
+.logoImage{
+    width:60px;
+    height:60px;
+}
+
+.userMenu{
+    width:100%;
+    background-color:@primarySecond !important;
+}
+.userMenuBackground{
+    background-color:@primaryFirstDarker;
+    width:100%;
+    //border-top:1px solid @whiteColour;
+    //border-bottom:1px solid @whiteColour;
+}
+.menuIcon{
+    color:@whiteColour;
+    margin-right: 10px;
+}
+
+///////////////////HEADER//////////////////////////////////////////////////////////////////////////////////
+.borderRadius5{
+    border-radius: 5px;
+}
+
+.buttonLinks{
+    display:block;
+
+    &:hover{
+        color:@textColour;
+        text-decoration: none;
+    }
+    //width:130px;
+    font-size:14px;
+    text-align: center;
+    padding:7px 10px 3px 10px;
+    .borderRadius5;
+    margin:0 auto;
+    text-transform: uppercase;
+}
+
+.fullLink{
+    .buttonLinks;
+    background-color:@primarySecond;
+    color:@whiteColour;
+    &:hover{
+        color:@whiteColour;
+    }
+    height:26px;
+
+}
+.emptyLink{
+    .buttonLinks;
+    border: 1px solid @primarySecond;
+    color:@textColour;
+    height:26px;
+}
+
+.emptyDeleteButton, .emptyDeleteButton:hover{
+    .buttonLinks;
+    padding:11px 10px 11px 10px;
+    cursor: pointer;
+    border:1px solid @whiteColour;
+
+}
+
+////////////////////////////////  LOGIN MODAL ////////////////////////////////////////
+
+.fullLinkButton{
+    .buttonLinks;
+    height:38px;
+    padding:5px 10px 6px 10px;
+    background-color: @primaryFirstDarker;
+    color:@textColour;
+    &:hover{
+        color:@textColour;
+    }
+    border:none;
+    cursor: pointer;
+}
+.logInSpecial, .logInSpecial:hover{
+    color: @whiteColour;
+    background-color: @primarySecond;
+}
+.emptyLinkButton{
+    .buttonLinks;
+    padding:0px 7px;
+    border:1px solid @primarySecond;
+    &:hover{
+        border:1px solid @primarySecond;
+        color:@textColour;
+    }
+    margin-right:10px;
+}
+
+.uk-modal-dialog{
+    width:400px;
+}
+.uk-input{
+    margin-top:7px;
+    &:last-child{
+        margin-bottom:5px;
+    }
+    .borderRadius5;
+    border:1px solid @textColour;
+}
+
+////////////////////// FOOTER ////////////////////////////////////////
+.footerContainer{
+    margin-top:20px;
+    background-color:@textColour;
+    padding:50px 50px 10px 50px;
+}
+.footerTitle, .footerTitle:hover{
+    font-size:25px;
+}
+.footerLinks{
+    margin-left: 15px;
+}
+
+/////////// REGISTER FORM ////////////////////////////////////////
+.registerForm{
+    width:600px;
+    max-width: calc(100% - .01px)!important;
+    margin:20px auto;
+    padding-bottom: 20px;
+}
+.goBack, .goBack:hover{
+    text-decoration: none;
+    color:@textColour;
+}
+.goBack{
+    padding-top:15px;
+    display: block;
+    font-size:14px;
+}
+.iconGoBack{
+    color:@primarySecond;
+}
+.resultMessage{
+    background-color: @textColour;
+    .borderRadius5;
+    color:@whiteColour;
+    width:fit-content;
+    padding:2px 10px;
+}
+
+
+//////////////// USER PAGE ////////////////////////////////
+.reportLink{
+    color:@primarySecond;
+}
+.deleteLink, .deleteLink:hover{
+    color:@gray;
+}
+.questionAnswer{
+    //border:1px solid @textColour;
+    margin-bottom:30px;
+    //padding:20px;
+    .borderRadius5;
+    background-color: @gray;
+    color:@textColour;
+    font-size:14px;
+}
+.question{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.questionHeader{
+    border-radius: 5px 5px 0px 0px;
+    background-color: @textColour;
+    padding:8px 20px 10px 20px;
+    margin-bottom:10px;
+}
+.uk-link-reset a, a.uk-link-reset{
+    color:@whiteColour !important;
+}
+.userFrom, userFrom:hover{
+    font-weight: normal;
+    text-decoration: underline !important;
+    color:#606060 !important;
+}
+.answer {
+    padding: 5px 20px 0px 20px;
+    margin-top: 0px;
+}
+.answerSecond{
+    padding:20px;
+}
+.userFromClass{
+    padding:5px 20px 0px 20px;
+    color:@textColour;
+    font-family: @titleFont;
+    background-color: @primaryFirst;
+    border-radius: 5px 0px 5px 0px;
+}
+.userFromClass:hover{
+    color:@textColour;
+    text-decoration: underline;
+}
+.uk-link-reset{
+    font-size: 14px;
+}
+.questionAnswerWraper{
+    .registerForm;
+    //margin-bottom: 30px;
+}
+//.optionLinks{
+//    display: block;
+//    width:fit-content;
+//}
+.uk-comment-avatar{
+    width:40px;
+    height:40px;
+    border-radius:40px;
+    border:1px solid black;
+}
+.answerPart{
+    align-items: center;
+    border-left:3px solid @whiteColour;
+    padding:0px 20px;
+}
+.imageNull{
+    background-color:@gray;
+    padding:10px 15px;
+    border-radius: 50px;
+}
+
+
+//////////////////// AUTHOR PAGE /////////////////////////////////////
+.authorImage{
+    width:350px;
+    margin:30px auto 0px auto !important;
+    display: block;
+    .borderRadius5;
+}
+
+@media screen and (min-width: 639px) {
+    .authorImage{
+        margin-bottom:30px !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .responsiveFlex{
+        flex-direction: column;
+    }
+    .responsiveFlexFooter{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .responsiveFlexFooter>ul {
+        text-align: center;
+    }
+    .answerPart{
+        display: flex;
+        justify-content: center;
+        border:none;
+        border-top:3px solid @whiteColour;
+        padding:10px 20px;
+    }
+}
+@media screen and (max-width: 730px) {
+
+}
+
+/////////////////////////// ADMIN navigation ////////////////////////////////
+.uk-card-primary.uk-card-body .uk-nav-default>li>a, .uk-card-primary>:not([class*=uk-card-media])
+.uk-nav-default>li>a, .uk-card-secondary.uk-card-body .uk-nav-default>li>a,
+.uk-card-secondary>:not([class*=uk-card-media]) .uk-nav-default>li>a, .uk-light .uk-nav-default>li>a,
+.uk-offcanvas-bar .uk-nav-default>li>a, .uk-overlay-primary .uk-nav-default>li>a,
+.uk-section-primary:not(.uk-preserve-color) .uk-nav-default>li>a, .uk-section-secondary:not(.uk-preserve-color)
+.uk-nav-default>li>a, .uk-tile-primary:not(.uk-preserve-color) .uk-nav-default>li>a,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-nav-default>li>a{
+    &:hover{
+        color:@whiteColour;
+    }
+    color:@whiteColour;
+
+}
+.uk-offcanvas-bar{
+    border-right:1px solid @whiteColour;
+}
+.changeSizeAdmin{
+    font-size:25px;
+    text-decoration: underline;
+}
+.menuButton{
+    padding:0px 10px;
+    .borderRadius5;
+    margin-top: 20px;
+}
+.menuButton, .menuButton:hover{
+    background-color:@primarySecond;
+    color:@whiteColour;
+}
+.holdMenuButton{
+    height:fit-content;
+}
+.uk-offcanvas-bar{
+    //background-color:@whiteColour;
+}
+.uk-nav-default{
+    color:@textColour !important;
+
+}
+//////////////////////// ADMIN ADDITIONAL ////////////////////////
+.selectRole{
+    width:fit-content !important;
+}
+    ///////////////////// PROFILE //////////////////////////
+.profileBlock{
+    &:first-child{
+        margin-bottom: 0px;
+    }
+    &:nth-child(2){
+        margin-top:0px;
+        border-radius: 0px 0px 5px 5px;
+    }
+    .registerForm;
+    background-color: @textColour;
+    color:@whiteColour;
+    align-items: center !important;
+    border-radius: 5px 5px 0px 0px;
+}
+.profileImage{
+    width:80px;
+    height:80px;
+    border-radius: 50px;
+    margin-right:40px;
+}
+//.usernameImage{
+//    padding-top:20px;
+//    width:fit-content;
+//    margin: 0 auto;
+//}
+.pink{
+    color:@primarySecond;
+}
+.blue{
+    color:#0000A0;
+}
+.green{
+    color:#00FF00;
+}
+.genderIconProfile{
+    background-color: @whiteColour;
+    padding:5px 7px;
+    border-radius: 40px;
+}
+.editProfileIcon{
+    position:absolute;
+    top:20px;
+    right:30px;
+    color:@textColour;
+    &:hover{
+        color:@textColour;
+    }
+    background-color: @whiteColour;
+    border-radius: 0px 0px 5px 5px;
+    padding:5px 10px;
+}
+.info{
+    //border:1px solid @textColour;
+    height:fit-content;
+
+    &:first-child{
+        width:40%;
+    }
+    &:last-child{
+        width:50%;
+        padding:20px;
+        list-style-type: none;
+        &>li{
+            margin-bottom:10px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+.infop1{
+    text-align: center;
+    &:first-child{
+        margin:0 auto;
+        display: block;
+        margin-top:20px;
+    }
+}
+.infotitle{
+    font-weight: bold;
+    display: block;
+    width:100px !important;
+    margin:0px;
+    color:@primaryFirstDarker;
+}
+
+///////////////// PROFILE VISITED ///////////////////////////////////
+.askFieldProfile{
+    background-color: @gray;
+}
+.classTextarea{
+    width:90%;
+    max-width: 90%;
+    min-width: 90%;
+    margin-left:5%;
+}
+.classLabel{
+    margin-bottom: 10px;
+    padding-top: 20px;
+    border-top: 1px solid @whiteColour;
+    padding-left:5%;
+}
+
+@media screen and (max-width: 790px) {
+    .profileBlock{
+        flex-direction: column;
+    }
+    .info:last-child{
+        width:85%;
+        margin-top:0px;
+    }
+}
+
+.proba{
+    position: fixed;
+    bottom:0px;
+    right:0px;
+    z-index: 20;
+}
+
+/////////////////////// NOTIFICATION //////////////////////////////
+.notification{
+    & a:first-child{
+        color:@primarySecond;
+    }
+}
+.viewLink, .viewLink:hover{
+    color: @primarySecond;
+}
+.notificationModal{
+    width:700px !important;
+}
+
+.uk-badge{
+    position:absolute;
+    color:@whiteColour;
+    font-size:10px;
+    background-color: @primarySecond;
+    font-weight:bold;
+    min-width:20px;
+    padding:0px;
+    &:hover{
+        color:@whiteColour;
+    }
+}
+.firstb{
+    top:10px;
+    left:90px;
+}
+.secondb{
+    top:10px;
+    left:210px;
+}
+/////////////////////////// SEARCH ///////////////////////////////////
+.searchDesign{
+    width:600px;
+    margin: 20px auto 0px auto !important;
+}
+.uk-search{
+    display: block;
+}
+.uk-search-input{
+    //.borderRadius5;
+    width:100%;
+    border-radius: 5px 5px 0px 0px;
+    border-right: 2px solid #e5e5e5 !important;
+    border-left: 2px solid #e5e5e5 !important;
+}
+.searchResults{
+    box-sizing: border-box;
+    background-color: @whiteColour;
+    //width:598px;
+    z-index: 10;
+    width:100%;
+    border:1px solid #e5e5e5;
+    border-bottom: none;
+    border-top: none;
+    border-radius: 0px 0px 5px 5px;
+}
+.oneSearched{
+    & img {
+        width:30px;
+        height:30px;
+    }
+    padding:10px 0px 10px 20px;
+    border-bottom: 1px solid #e5e5e5;
+    .borderRadius5;
+
+}
+.searchColor, .searchColor:hover{
+    color:@textColour;
+    text-decoration: none;
+    font-size:14px;
+}
+.searchHover{
+    background-color:@gray;
+}
